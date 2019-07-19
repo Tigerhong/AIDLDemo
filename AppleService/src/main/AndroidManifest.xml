@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.print.aidldemo">
+
+    <application
+        android:allowBackup="true">
+        <service
+            android:name=".AppleService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote">
+
+            <intent-filter>
+                <action android:name="com.print.aidldemo.IAppleService"/>
+            </intent-filter>
+        </service>
+
+    </application>
+</manifest>
